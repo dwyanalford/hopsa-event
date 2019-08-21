@@ -1,0 +1,181 @@
+footer {
+    position: fixed;
+    width: 100%;
+    height: 105px;
+    bottom: 0;
+    color: white;
+    z-index: 3;
+    padding: 0;
+    /* border: 1px dashed white; */
+}
+
+/* this is hidden in the html so I could create my own audio
+controls using pure javascript to manipulate the DOM */
+
+#audio-controller {
+    position: absolute;
+    bottom: 25px;
+    left: -300px;
+}
+
+#player-controls {
+    position: absolute;
+    width: 150px;
+}
+
+#player-controls i:hover {
+    color: red;
+}
+
+#contacts {
+    position: absolute;
+    width: 450px;
+    line-height: 1.1;
+    /* background-color: blueviolet; */
+}
+
+#contact-button {
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    width: 200px;  
+}
+
+footer button:hover {
+    border: 1px solid black;
+}
+
+#social-media-icons {
+    position: absolute;
+}
+
+.adjust {
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+/* ............................................ max width 700px */
+@media only screen and (max-width: 700px) {
+
+    #social-media-icons {
+        bottom: 10px;
+        left: 0;
+        width: 250px;
+    }
+
+    .adjust {
+        margin-left: 50px;
+    }
+
+    #contacts {
+        width: 450px;
+        bottom: 40px;
+        left: 20px;
+        font-size: 12px;
+        line-height: 1.1;
+        /* background-color: blueviolet; */
+    }
+
+    #contact-button {
+        bottom: 25px;
+        right: 10px;
+        width: 200px;  
+    }
+}
+
+/* ............................................ min width 701px */
+@media only screen and (min-width: 701px) {
+
+    #social-media-icons {
+        bottom: 30px;
+        left: 235px;
+        width: 250px;
+    }
+
+    .adjust {
+        margin-left: 50px;
+    }
+
+    #contacts {
+        width: 450px;
+        bottom: 20px;
+        left: 20px;
+        font-size: 12px;
+        line-height: 1.1;
+    }
+
+    #contact-button {
+        bottom: 25px;
+        right: 10px;
+        width: 200px;  
+    }
+}
+
+/* ............................................ max width 992px */
+@media only screen and (max-width: 992px) {
+    #player-controls {
+        display: none;
+    }
+}
+
+/* ............................................ min width 993px */
+@media only screen and (min-width: 993px) {
+    #contacts {
+        bottom: 20px;
+        left: 240px;
+        font-size: 14px;
+    }
+
+    #social-media-icons {
+        bottom: 30px;
+        left: 500px;
+        right: 0px;
+        width: 250px;
+    }
+
+    #player-controls {
+        bottom: 45px;
+        left: 20px;
+        width: 150px;
+    }
+}
+
+/* ............................................ min width 1200px */
+@media only screen and (min-width: 1200px) {
+    #social-media-icons {
+        bottom: 30px;
+        left: 700px;
+        width: 250px;
+    }
+
+}
+
+/* ............................................ min width 1800px */
+@media only screen and (min-width: 1800px) {
+    #social-media-icons {
+        bottom: 30px;
+        left: 700px;
+        width: 250px;
+    }
+
+    #player-controls {
+        bottom: 30px;
+        left: 100px;
+    }
+
+    #contacts {
+        bottom: 15px;
+        left: 500px;
+        font-size: 14px;
+    }
+
+    #social-media-icons {
+        bottom: 30px;
+        left: 1100px;
+    }
+    
+    .adjust {
+        margin-left: 40px;
+    }
+
+}

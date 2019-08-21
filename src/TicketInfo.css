@@ -1,0 +1,10 @@
+#ticket-info {
+    font-family: Atma;
+    text-align: center;
+    text-transform: uppercase;
+    height: 1200px;
+}
+
+#ticket-info p {
+    font-size: 20px;
+}
