@@ -8,6 +8,7 @@ import Fundraiser from './Fundraiser'
 import Event from './Event'
 import TicketInfo from './TicketInfo'
 import Summary from './Summary'
+import Payments from './Payments'
 
 import '../Hero.scss'
 import '../Transitions.scss'
@@ -131,6 +132,7 @@ function Hero () {
         <Route path='/fundraising' component={Fundraiser}></Route>
         <Route path='/night-to-remember' component={Event}></Route>
         <Route path='/ticket-info' component={TicketInfo}></Route>
+        <Route path='/buytickets' component={Payments}></Route>
         </div>
       </section>
     )

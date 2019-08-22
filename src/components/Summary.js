@@ -9,7 +9,7 @@ function Summary() {
             <p>WHEN: SATURDAY, 26TH OCTOBER <br/>7PM - 'TILL SHH!</p>
             <p>WHERE: Unique Events, Trade Fair</p>
             <p>WHY: Refurbish All 9 Houses</p>
-            <p>WEAR: 70's attire or smart casual</p>
+            <p>WEAR: 70's attire or smart cocktail</p>
         </div>
     )
 }
