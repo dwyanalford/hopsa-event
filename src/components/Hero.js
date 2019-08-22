@@ -17,7 +17,7 @@ function Hero () {
     return (
         <section id="hero">
             {/* <img id="back-image" src={discoImage} alt="dancers" className="kenburns-bottom" /> */}
-            <div className="bubble-wrap" style={{display: 'none'}}>
+            <div className="bubble-wrap">
                 <div className="bubble"></div>
                 <div className="bubble"></div>
                 <div className="bubble"></div>
