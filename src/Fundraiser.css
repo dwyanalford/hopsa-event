@@ -1,5 +1,6 @@
 #fundraiser {
-    /* height: 1200px; */
+    height: auto;
+    margin-bottom: 100px;
 }
 
 #fundraiser p {
@@ -7,3 +8,27 @@
     font-size: 21px;
     text-align: left;
 }
+
+@media only screen and (max-width: 990px) {
+    #fundraiser {
+        padding: 0px 40px;
+    }
+  }
+
+@media only screen and (min-width: 991px) {
+    #fundraiser {
+        padding: 0px 60px;
+    }
+  }
+
+@media only screen and (min-width: 1200px) {
+    #fundraiser {
+        padding: 0px 30px;
+    }
+  }
+
+  @media only screen and (min-width: 1500px) {
+    #fundraiser {
+        padding: 0px 60px;
+    }
+  }

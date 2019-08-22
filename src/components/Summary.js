@@ -2,7 +2,7 @@ import React from 'react'
 
 function Summary() {
     return(
-        <div id="summary">
+        <div id="summary" style={{marginTop: '40px'}}>
             <h1>HOPSA 79 DIVAS</h1>
             <h3>SIP, DINE & JAM 'OL SKOOL STYLE</h3>
             <h2 className="highlight-color">#NightToRemember</h2>

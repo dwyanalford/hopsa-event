@@ -17,7 +17,6 @@ controls using pure javascript to manipulate the DOM */
     left: -300px;
 }
 
-#player-controls,
 #contacts,
 #contact-button,
 #social-media-icons {
@@ -76,10 +75,10 @@ controls using pure javascript to manipulate the DOM */
 }
 
 /* ............................................ max width 700px */
-@media only screen and (max-width: 835px) {
+@media only screen and (max-width: 991px) {
+
     #player-controls {
         display: none;
-        // width: 33.3333%;
     }
 
     #contacts {
@@ -96,9 +95,14 @@ controls using pure javascript to manipulate the DOM */
 
 }
 
-/* ............................................ min width 836px */
-@media only screen and (min-width: 836px) {
+// matches where the record player comes in from hero section
+@media only screen and (min-width: 992px) {
+    
     #player-controls {
+        display: block;
+        position: static;
+        float: left;
+        height: 100%;
         width: 33.3333%;
     }
 
@@ -129,6 +133,5 @@ controls using pure javascript to manipulate the DOM */
         width: 220px;
         margin: 25px auto;
     }
-    
 }
 

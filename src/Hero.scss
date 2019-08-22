@@ -34,30 +34,28 @@ $myfont: Atma;
   }
 
   #hero {
-    padding: 32px;
-    background-color: black;
     color: #dddddd;
     width: 100%;
     height: auto;
-    position: relative;
-    transform-style: preserve-3d;
-    // background-image: url('./images/hero-background.jpg');
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
-    // background-size: contain;
-    overflow: scroll;
+    // transform-style: preserve-3d;
+    background-color: black;
   }
-  
-  #record-container,
-  #show-container {
-    position: absolute;
-    // border: 1px solid white;
-    
+
+  #record-container {
+    // background-color: red;
+  }
+
+  #record-container > div {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    // background-color: green;
   }
 
   #show-container {
-      text-align: center; 
+      text-align: center;
+      height: 650px;
+      overflow: scroll;
   }
 
   #show-container h1 {
@@ -81,30 +79,10 @@ $myfont: Atma;
     line-height: 24px; 
   }
   
-  #record-player,
-  #record-playhead {
-    position: absolute;
-    bottom: 75px;
-  }
-  
-  #record-vinyl {
-    position: absolute;
-    left: 65px;
-    bottom: 125px;
-  }
-  
   .App-logo {
     animation: App-logo-spin infinite 2s linear;
     /* height: 40vmin; */
     pointer-events: none;
-  }
-
-  #back-image {
-    position: absolute;
-    right: 30%;
-    opacity: 0.33;
-    border-radius: 50%;
-
   }
   
   @keyframes App-logo-spin {
@@ -142,108 +120,119 @@ $myfont: Atma;
 
     #show-container {
       width: 100%;
-      right: 0px;
-      top: 100px;
     }
 
-    #record-player,
-    #record-playhead {
-      height: 407px;
-      width: 500px;
-      bottom: 10px;
-    }
-
-    #record-vinyl {
-      height: 320px;
-      width: 320px;
-      left: 65px;
-      bottom: 60px;
-    }
-
-    .bubble-wrap {
-      width: 50%;
-      perspective: 2000px;
-    }
-    .bubble {
-      opacity: .4;
+    // .bubble-wrap {
+    //   width: 50%;
+    //   perspective: 2000px;
+    // }
+    // .bubble {
+    //   opacity: .4;
       
-    }
+    // }
   }
   /* ............................................ max width 992px */
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 991px) {
   #record-container {
     display: none;
+  }
+
+  #show-container {
+    width: 100%;
+    margin-top: 80px;
   }
 }
 
   /* ............................................ min width 992px */
   @media only screen and (min-width: 992px) {
+
+    #record-container,
+    #show-container {
+      float: left;
+      width: 50%;
+      margin-top: 70px;
+    }
+
     #record-container {
-      display: block;
-      height: 500px;
-      width: 100%;
-      z-index: -1;
-      bottom: 180px;
+      position: relative;
+      height: auto;
+      overflow: hidden;
+      padding: 50px 0;
+    }
+
+    #record-container > div {
+      height: 386px;
+      width: 475px;
+      position: fixed;
+      margin-left: 5%;
+    }
+
+    #record-player,
+    #record-playhead,
+    #record-vinyl {
+      position: absolute;
+      top: 0;
+    }
+
+    #record-player,
+    #record-playhead  {
+      height: 386px;
+      width: 475px;
+    }
+  
+    #record-vinyl {
+      height: 308px;
+      width: 308px;
+      left: 55px;
+      top: 40px;
     }
 
     #show-container {
+      height: auto;
       width: 50%;
-      right: 30px;
-      top: 120px;
+      // background-color: blue;
     }
 
-    .bubble-wrap {
-      width: 80%;
-      perspective: 2000px;
-    }
-    .bubble {
-      opacity: .2;
+    // .bubble-wrap {
+    //   width: 80%;
+    //   perspective: 2000px;
+    // }
+    // .bubble {
+    //   opacity: .2;
       
-    }
+    // }
   }
 
   /* ............................................ min width 1200px */
-  @media only screen and (min-width: 1200px) {
-    .bubble-wrap {
-      width: 60%;
-      transform-origin: center center;
-      perspective: 3600px;
+  @media only screen and (min-width: 1245px) {
+    
+    #record-container > div {
+      height: 488px;
+      width: 600px;
     }
-    .bubble {
-      opacity: .6;
-      animation: move 6s infinite;
+
+    #record-vinyl {
+      left: 65px;
+      top: 45px;
+      height: 318px;
+      width: 318px;
+    }
+
+    #record-player,
+    #record-playhead  {
+      height: 407px;
+      width: 500px;
+    }
+
+    #record-container > div {
+      margin-left: 10%;
     }
   }
 
   /* ............................................ min width 1800px */
   @media only screen and (min-width: 1800px) {
 
-    #record-container {
-      height: 500px;
-      width: 600px;
-      z-index: -1;
-      bottom: 0;
-    }
-
-    #record-player,
-    #record-playhead {
-      height: 488px;
-      width: 600px;
-      bottom: 75px;
-    }
-
-    #record-vinyl {
-      height: 392px;
-      width: 392px;
-      left: 65px;
-      bottom: 125px;
-    }
-
-    #show-container {
-      width: 500px;
-      right: 250px;
-      top: 125px;
-  }
+    
   }
 
 

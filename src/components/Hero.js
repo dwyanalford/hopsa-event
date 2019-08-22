@@ -16,7 +16,7 @@ function Hero () {
     return (
         <section id="hero">
             {/* <img id="back-image" src={discoImage} alt="dancers" className="kenburns-bottom" /> */}
-            <div className="bubble-wrap">
+            <div className="bubble-wrap" style={{display: 'none'}}>
                 <div className="bubble"></div>
                 <div className="bubble"></div>
                 <div className="bubble"></div>
@@ -120,9 +120,11 @@ function Hero () {
             </div>
 
         <div id="record-container">
-          <img id="record-player" src={recordPlayer} alt="record player" />
-          <img id="record-vinyl"  className="App-logo" src={recordVinyl} alt="record vinyl" />
-          <img id="record-playhead" src={recordPlayhead} alt="record playhead" />
+          <div>
+            <img id="record-player" src={recordPlayer} alt="record player" />
+            <img id="record-vinyl"  className="App-logo" src={recordVinyl} alt="record vinyl" />
+            <img id="record-playhead" src={recordPlayhead} alt="record playhead" />
+          </div>
         </div>
         <div id="show-container">
         <Route exact path='/' component={Summary}></Route>
