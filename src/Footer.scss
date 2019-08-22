@@ -1,0 +1,134 @@
+// Global css styles for all screen sizes.
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 85px;
+    color: white;
+    font-family: atma;
+}
+
+/* this is hidden in the html so I could create my own audio
+controls using pure javascript to manipulate the DOM */
+
+#audio-controller {
+    position: absolute;
+    bottom: 25px;
+    left: -300px;
+}
+
+#player-controls,
+#contacts,
+#contact-button,
+#social-media-icons {
+    position: static;
+    float: left;
+    height: 100%;
+}
+
+/* my own audio controls links */
+#player-controls {
+    // background-color: green;
+}
+
+#player-controls > div {
+    // background-color: red;
+}
+
+#contacts {
+    // background-color: blueviolet;
+}
+
+#contacts > div {
+    text-align: center;
+    margin: 0 auto;
+    // background-color: red;
+}
+
+#contacts p {
+    font-size: 16px;
+    line-height: 1.3;
+    // color: rgb(235, 235, 235);
+    color: black;
+}
+
+#contact-button {
+    // background-color: red;
+}
+
+#contact-button > div {
+    text-align: center;
+    // background-color: red;
+}
+
+#social-media-icons {
+    // background-color: yellow;
+}
+
+#social-media-icons > div {
+    // background-color: blue;
+    text-align: center;
+}
+// adjust spacing between social media links plus change cursor behavior
+.adjust {
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+/* ............................................ max width 700px */
+@media only screen and (max-width: 835px) {
+    #player-controls {
+        display: none;
+        // width: 33.3333%;
+    }
+
+    #contacts {
+        width: 50%;
+    }
+
+    #contact-button {
+        width: 50%;
+    }
+
+    #contact-button > div {
+        margin: 20px auto;
+    }
+
+}
+
+/* ............................................ min width 836px */
+@media only screen and (min-width: 836px) {
+    #player-controls {
+        width: 33.3333%;
+    }
+
+    #player-controls > div {
+        width: 140px;
+        margin: 30px auto;
+        color: black;
+    }
+
+    #contacts {
+        width: 33.3333%;
+    }
+
+    #contacts > div {
+        width: 265px;
+    }
+
+    #contact-button {
+        width: 33.3333%;
+    }
+
+    #contact-button > div {
+        width: 265px;
+        margin: 20px auto;
+    }
+    
+    #social-media-icons > div {
+        width: 220px;
+        margin: 25px auto;
+    }
+    
+}
+

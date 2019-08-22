@@ -3,11 +3,14 @@ import { Route } from "react-router-dom";
 import recordPlayer from '../images/record-player.png'
 import recordVinyl from '../images/record-vinyl.png'
 import recordPlayhead from '../images/record-playhead.png'
-import '../Hero.scss'
+
 import Fundraiser from './Fundraiser'
 import Event from './Event'
 import TicketInfo from './TicketInfo'
 import Summary from './Summary'
+
+import '../Hero.scss'
+import '../Transitions.scss'
 
 function Hero () {
     return (

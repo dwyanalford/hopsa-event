@@ -24,12 +24,12 @@ class Navigation extends Component {
         return(
             <nav>
                     <div className="topnav" id="myTopnav">
-                        <NavLink exact to="/" activeClassName="active">Overview</NavLink>
-                        <NavLink to ="/night-to-remember" activeClassName="active">What?</NavLink>
-                        <NavLink to ="/fundraising" activeClassName="active">Why?</NavLink>
-                        <NavLink to ="/ticket-info" activeClassName="active">Ticket Info</NavLink>
+                        <NavLink exact to="/" activeStyle={{color: '#99733B'}}>Overview</NavLink>
+                        <NavLink to ="/night-to-remember" activeStyle={{color: '#99733B'}}>What?</NavLink>
+                        <NavLink to ="/fundraising" activeStyle={{color: '#99733B'}}>Why?</NavLink>
+                        <NavLink to ="/ticket-info" activeStyle={{color: '#99733B'}}>Ticket Info</NavLink>
                         <a href="#">Buy Tickets</a>
-                        <a href="javascript:void(0);" className="icon" onClick={this.toggleClass}>
+                        <a className="icon" onClick={this.toggleClass}>
                             <i className="fas fa-bars"></i>
                         </a>
                     </div>
