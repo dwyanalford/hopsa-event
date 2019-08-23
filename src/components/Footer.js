@@ -24,7 +24,7 @@ class Footer extends Component {
     render() {
         return (
             <footer className="background-color">
-                <audio id="audio-controller" controls loop ref={this.playAudio}>
+                <audio id="audio-controller" controls loop>
                     <source src={themeSong} type="audio/mpeg"/>
                     Your browser does not support the audio tag.
                 </audio>
