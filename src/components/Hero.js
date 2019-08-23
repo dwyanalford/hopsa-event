@@ -123,7 +123,7 @@ function Hero () {
         <div id="record-container">
           <div>
             <img id="record-player" src={recordPlayer} alt="record player" />
-            <img id="record-vinyl"  className="App-logo" src={recordVinyl} alt="record vinyl" />
+            <img id="record-vinyl"  src={recordVinyl} alt="record vinyl" />
             <img id="record-playhead" src={recordPlayhead} alt="record playhead" />
           </div>
         </div>

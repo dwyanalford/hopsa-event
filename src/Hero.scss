@@ -55,7 +55,6 @@ $myfont: Atma;
   #show-container {
       text-align: center;
       height: 650px;
-      overflow: scroll;
   }
 
   #show-container h1 {
@@ -97,18 +96,16 @@ $myfont: Atma;
   @media only screen and (max-width: 600px) {
 
     #show-container {
-      width: 100%;
-      right: 0;
-      top: 100px;
+      // width: 100%;
     }
 
-   .bubble-wrap {
-      width: 50%;
-      transform-origin: center top;
-      perspective: 100px;
-      margin-top: -350px;
-      // height: 1200px;
-    }
+  //  .bubble-wrap {
+  //     width: 50%;
+  //     transform-origin: center top;
+  //     perspective: 100px;
+  //     margin-top: -350px;
+  //     height: 1200px;
+  //   }
   }
 
   /* ............................................ min width 601px */
