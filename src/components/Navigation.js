@@ -9,6 +9,7 @@ class Navigation extends Component {
         this.state = {}
 
         this.toggleClass = this.toggleClass.bind(this)
+        this.closeMobileMenu = this.closeMobileMenu.bind(this)
     }
 
     toggleClass() {
@@ -20,15 +21,24 @@ class Navigation extends Component {
         }
     }
 
+    closeMobileMenu() {
+        const x = document.getElementById("myTopnav");
+        if (x.className === "topnav responsive") {
+            x.classList.remove('responsive');
+        } else {
+            x.className = "topnav responsive";
+        }
+    }
+
     render() {
         return(
             <nav>
                     <div className="topnav" id="myTopnav">
-                        <NavLink exact to="/" activeStyle={{color: '#F9C43A'}}>Overview</NavLink>
-                        <NavLink to ="/night-to-remember" activeStyle={{color: '#F9C43A'}}>What?</NavLink>
-                        <NavLink to ="/fundraising" activeStyle={{color: '#F9C43A'}}>Why?</NavLink>
-                        <NavLink to ="/ticket-info" activeStyle={{color: '#F9C43A'}}>Ticket Info</NavLink>
-                        <NavLink to ="/buytickets" activeStyle={{color: '#F9C43A'}}>Buy Tickets</NavLink>
+                        <NavLink exact to="/" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu}>Overview</NavLink>
+                        <NavLink to ="/night-to-remember" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu}>What?</NavLink>
+                        <NavLink to ="/fundraising" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu}>Why?</NavLink>
+                        <NavLink to ="/ticket-info" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu}>Ticket Info</NavLink>
+                        <NavLink to ="/buytickets" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu}>Buy Tickets</NavLink>
                         <a className="icon" onClick={this.toggleClass}>
                             <i className="fas fa-bars"></i>
                         </a>
