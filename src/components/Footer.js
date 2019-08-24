@@ -13,12 +13,12 @@ class Footer extends Component {
 
     playAudio() {
         document.getElementById('audio-controller').play()
-        document.getElementById('record-vinyl').classList.add('App-logo')
+        document.getElementById('record-vinyl').classList.add('record-spins')
     }
 
     pauseAudio() {
         document.getElementById('audio-controller').pause()
-        document.getElementById('record-vinyl').classList.remove('App-logo')
+        document.getElementById('record-vinyl').classList.remove('record-spins')
     }
 
     render() {
