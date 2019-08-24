@@ -30,8 +30,8 @@ class Footer extends Component {
                 </audio>
                 <div id="player-controls">
                     <div>
-                        <i id="play-icon" class="fas fa-play fa-lg adjust" onClick={this.playAudio}></i>
-                        <i id="pause-icon" class="fas fa-pause fa-lg adjust" onClick={this.pauseAudio}></i>
+                        <i id="play-icon" className="fas fa-play fa-lg adjust" onClick={this.playAudio}></i>
+                        <i id="pause-icon" className="fas fa-pause fa-lg adjust" onClick={this.pauseAudio}></i>
                     </div>
                 </div>
                 <div id="contacts">
@@ -43,12 +43,12 @@ class Footer extends Component {
                     <div>
                         <i className="fab fa-facebook fa-2x adjust"></i>
                         <i className="fab fa-whatsapp fa-2x adjust"></i>
-                        <i class="fab fa-instagram fa-2x adjust"></i>
+                        <i className="fab fa-instagram fa-2x adjust"></i>
                     </div>
                 </div>
                 <div id="contact-button">
                     <div>
-                        <a href="mailto:aflowery@me.com?subject=night%20to%20remember%20website%20inquiry" className="w3-button w3-round-large w3-large w3-black">SEND MESSAGE</a>
+                        <a href="mailto:aflowery@me.com?cc=c.langlah@tgcrestaurant.com&subject=night%20to%20remember%20website%20inquiry" className="w3-button w3-round-large w3-large w3-black">SEND MESSAGE</a>
                     </div>
                 </div>
             </footer>

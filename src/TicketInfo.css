@@ -3,9 +3,71 @@
     text-align: center;
     text-transform: uppercase;
     height: auto;
-    margin-bottom: 100px;
+    min-width: 450px;
+    width: 450px;
+    margin: auto;
+    /* margin-bottom: 100px; */
+    /* overflow: hidden; */
+    /* background-color: yellow; */
 }
 
 #ticket-info p {
     font-size: 20px;
+}
+
+.sponsor-level {
+    height: 70px;
+    float: left;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.sponsor-level-left {
+    width: 85px;
+    /* background-color: white; */
+    border-radius: 40%;
+}
+
+.sponsor-level-right {
+    width: 330px;
+    /* background-color: green; */
+    margin-left: 20px;
+}
+
+.sponsor-level p {
+    text-align: left;
+    margin-top: 11px;
+    /* background-color: red; */
+    
+}
+
+#sponsor-1, 
+#sponsor-2,
+#sponsor-3,
+#sponsor-4,
+#sponsor-5 {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0.5px solid #292828;
+}
+
+#sponsor-1 {
+    background-image: url('./images/sponsors/fly-robin-fly.jpg');
+}
+
+#sponsor-2 {
+    background-image: url('./images/sponsors/aint-no-stopping.jpg');
+}
+
+#sponsor-3 {
+    background-image: url('./images/sponsors/commodores-brickhouse.jpg');
+}
+
+#sponsor-4 {
+    background-image: url('./images/sponsors/anita-ward-ring-bell.jpg');
+}
+
+#sponsor-5 {
+    background-image: url('./images/sponsors/shake-groove-thang.jpg');
 }

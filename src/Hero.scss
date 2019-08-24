@@ -17,18 +17,19 @@ $myfont: Atma;
     background: black;
     border-radius: 50%;
     animation: move 6s infinite;
-    display: none;
+    // display: none;
     
   }
   
   @for $i from 1 through 100 {
     .bubble:nth-child(#{$i}){
-       $size: random(80)+px;
+       $size: random(20)+px;
        height: $size;
        width: $size;
        animation-delay: -$i * .2s;
        transform: translate3d( (random(1000) * 1px),  (random(1000) * 1px), (random(2000) * 1px));
        background: hsl( random(71) , 80%, 50%);
+       background:rgb(167, 131, 35);
     }
    
   }
@@ -37,7 +38,6 @@ $myfont: Atma;
     color: #dddddd;
     width: 100%;
     height: auto;
-    // transform-style: preserve-3d;
     // background-color: black;
     // display: none;
   }
@@ -55,27 +55,33 @@ $myfont: Atma;
 
   #show-container {
       text-align: center;
-      height: 650px;
+      // height: 650px;
+      // background-color: blue;
   }
 
   #show-container h1 {
     font-family: $myfont;
-    font-size: 50px;
+    font-size: 28px;
   }
 
   #show-container h2 {
     font-family: $myfont;
-    font-size: 40px;
+    font-size: 25px;
   }
 
   #show-container h3 {
     font-family: $myfont;
-    font-size: 32px;
+    font-size: 24px;
+  }
+
+  #show-container h4 {
+    font-family: $myfont;
+    font-size: 22px;
   }
 
   #show-container p {
     font-family: $myfont;
-    font-size: 21px;
+    font-size: 20px;
     line-height: 24px; 
   }
   

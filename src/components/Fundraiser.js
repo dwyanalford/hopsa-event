@@ -4,7 +4,7 @@ import '../Fundraiser.css'
 function Fundraiser() {
     return(
             <div id="fundraiser">
-                <h3 className="highlight-color">FIRST INAUGURAL/ANNUAL LEGACY SHS MAINTENANCE FUNDRAISER</h3>
+                <h1 className="highlight-color">First Inaugural/Annual Legacy SHS Maintenance Fundraiser</h1>
                 <p>This is the First of its Kind.  We are doing a different type of event. Not your typical one.
     Setting precedence. We are engaging alumni from other schools to help push this as
     the First Inaugural/Annual Maintenance Fundraiser for Legacy Schools.</p>

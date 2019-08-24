@@ -35,21 +35,24 @@ nav {
         padding: 14px 28px;
         font-size: 22px;
       }
-    // hide all links except the first one;
+    // hide all links;
     .topnav a {display: none;}
-    .topnav a.icon {  // show mobile icon
+    .topnav button.icon {  // show mobile icon
       float: right;
       display: block;
       cursor: pointer;
+      margin-right: 20px;
+      margin-top: 15px;
     }
+
     /* The "responsive" class added to topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
     .topnav.responsive {
       position: relative; 
       background-color: black;
-      opacity: 0.9;
+      // opacity: 0.9;
     }
 
-    .topnav.responsive a.icon {
+    .topnav.responsive button.icon {
       position: absolute;
       right: 0;
       top: 0;

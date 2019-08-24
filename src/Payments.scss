@@ -1,21 +1,25 @@
 #payments {
     height: auto;
     margin-bottom: 100px;
+    // background-color: red;
 }
 
 #payment-container {
-    margin-top: 50px;
     font-family: Atma;
-    font-size: 19px;
-    padding-bottom: 30px;
+    font-size: 18px;
+    width: 450px;
+    margin: auto;
+    padding: 16px;
+    // border: 0.5px solid #292828;
+    // border-radius: 25%;
     // background-color: beige;
 }
 
 #payment-container form {
     width: 350px;
     margin: 20px auto;
-    padding-bottom: 20px;
-    border-bottom: 0.5px solid #666562;
+    // padding-bottom: 10px;
+    // border: 0.5px solid #666562;
     // background-color: red;
 }
 
@@ -26,4 +30,8 @@
 
 #credit-card-icons i {
     margin: 0 6px;
+}
+
+#local-tickets {
+    margin-top: -40px;
 }
