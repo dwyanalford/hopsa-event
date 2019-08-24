@@ -29,6 +29,17 @@ nav {
   .topnav .icon {
     display: none;
   }
+
+  /* The animation code */
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }   
+
+  .fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1.3s;
+  }
 //.............................................max-width: 600px
 @media screen and (max-width: 600px) {
     .topnav a {

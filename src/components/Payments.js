@@ -3,7 +3,7 @@ import '../Payments.scss'
 
 function Payments() {
     return(
-        <div id="payments">
+        <div id="payments" name="transition">
             <div id="payment-container">
                 <h2 className="highlight-color">Buy Tickets Online</h2>
                 <div id="credit-card-icons">

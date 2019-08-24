@@ -121,6 +121,9 @@ function Hero () {
             </div>
 
         <div id="record-container">
+        <section class="stage">
+  <figure class="ball"><span class="shadow"></span></figure>
+</section>
           <div>
             <img id="record-player" src={recordPlayer} alt="record player" />
             <img id="record-vinyl"  src={recordVinyl} alt="record vinyl" />

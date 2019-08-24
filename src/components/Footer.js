@@ -48,7 +48,7 @@ class Footer extends Component {
                 </div>
                 <div id="contact-button">
                     <div>
-                        <a href="mailto:aflowery@me.com?cc=c.langlah@tgcrestaurant.com&subject=night%20to%20remember%20website%20inquiry" className="w3-button w3-round-large w3-large w3-black">SEND MESSAGE</a>
+                        <a href="mailto:aflowery@me.com?cc=c.langlah@tgcrestaurant.com&subject=night%20to%20remember%20website%20inquiry" className="w3-button w3-round-large w3-large w3-amber">EMAIL US</a>
                     </div>
                 </div>
             </footer>

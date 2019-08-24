@@ -3,7 +3,8 @@
 /* global setting for linkable hover color  */
 $highlightColor: #F9C43A;
 $highlightColor: rgb(167, 131, 35);
-$backgroundColor: #916B04;
+$backgroundColor: rgb(0, 0, 0);
+// $backgroundColor: none;
 
 @font-face {
   font-family: Atma;
@@ -39,5 +40,5 @@ body {
 }
 
 #player-controls i:hover {
-  color: green;
+  color: rgb(167, 131, 35);
 }

@@ -10,6 +10,7 @@ class Navigation extends Component {
 
         this.toggleClass = this.toggleClass.bind(this)
         this.closeMobileMenu = this.closeMobileMenu.bind(this)
+        this.menuTransition = this.menuTransition.bind(this)
     }
 
     toggleClass() {
@@ -30,15 +31,27 @@ class Navigation extends Component {
         }
     }
 
+    menuTransition() {
+        const a = document.getElementById('show-container')
+        a.classList.add('fade-in')
+
+        return new Promise(resolve => {
+            setTimeout(function() {
+              resolve("fast");
+              a.classList.remove('fade-in')
+            }, 1300);
+          });
+    }
+
     render() {
         return(
             <nav>
                     <div className="topnav" id="myTopnav">
-                        <NavLink exact to="/" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu}>Overview</NavLink>
-                        <NavLink to ="/night-to-remember" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu}>What?</NavLink>
-                        <NavLink to ="/fundraising" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu}>Why?</NavLink>
-                        <NavLink to ="/ticket-info" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu}>Ticket Info</NavLink>
-                        <NavLink to ="/buytickets" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu}>Buy Tickets</NavLink>
+                        <NavLink exact to="/" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu}onClick={this.menuTransition}>Overview</NavLink>
+                        <NavLink to ="/night-to-remember" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>What?</NavLink>
+                        <NavLink to ="/fundraising" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Why?</NavLink>
+                        <NavLink to ="/ticket-info" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Ticket Info</NavLink>
+                        <NavLink to ="/buytickets" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Buy Tickets</NavLink>
                         <button className="icon" onClick={this.toggleClass}>
                             <i className="fas fa-bars fa-lg"></i>
                         </button>

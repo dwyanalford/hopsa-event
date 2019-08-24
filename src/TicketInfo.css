@@ -1,7 +1,6 @@
 #ticket-info {
     font-family: Atma;
     text-align: center;
-    text-transform: uppercase;
     height: auto;
     min-width: 450px;
     width: 450px;
@@ -13,6 +12,7 @@
 
 #ticket-info p {
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 .sponsor-level {
@@ -25,7 +25,7 @@
 .sponsor-level-left {
     width: 85px;
     /* background-color: white; */
-    border-radius: 40%;
+    border-radius: 50%;
 }
 
 .sponsor-level-right {

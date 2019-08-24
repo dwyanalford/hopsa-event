@@ -23,7 +23,7 @@ $myfont: Atma;
   
   @for $i from 1 through 100 {
     .bubble:nth-child(#{$i}){
-       $size: random(20)+px;
+       $size: random(180)+px;
        height: $size;
        width: $size;
        animation-delay: -$i * .2s;
@@ -38,18 +38,18 @@ $myfont: Atma;
     color: #dddddd;
     width: 100%;
     height: auto;
-    // background-color: black;
+    // background-color: white;
     // display: none;
   }
 
   #record-container {
-    // background-color: red;
+  // background-color: red;
   }
 
   #record-container > div {
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
+    // position: relative;
+    // overflow: hidden;
+    // margin: 0 auto;
     // background-color: green;
   }
 
@@ -102,17 +102,6 @@ $myfont: Atma;
   /* ............................................ max width 600px */
   @media only screen and (max-width: 600px) {
 
-    #show-container {
-      // width: 100%;
-    }
-
-  //  .bubble-wrap {
-  //     width: 50%;
-  //     transform-origin: center top;
-  //     perspective: 100px;
-  //     margin-top: -350px;
-  //     height: 1200px;
-  //   }
   }
 
   /* ............................................ min width 601px */
@@ -126,14 +115,6 @@ $myfont: Atma;
       width: 100%;
     }
 
-    // .bubble-wrap {
-    //   width: 50%;
-    //   perspective: 2000px;
-    // }
-    // .bubble {
-    //   opacity: .4;
-      
-    // }
   }
   /* ............................................ max width 992px */
   @media only screen and (max-width: 991px) {
@@ -149,7 +130,51 @@ $myfont: Atma;
 
   /* ............................................ min width 992px */
   @media only screen and (min-width: 992px) {
+    .stage {
+      width: 300px;
+      height: 300px;
+      display: inline-block;
+      margin: 20px;
+      perspective: 1200px;
+      perspective-origin: 50% 50%;
+    }
 
+    .ball {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      border-radius: 50%;
+      position: relative;
+      background: radial-gradient(circle at 50% 120%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);
+    }
+
+    .ball:before {
+      content: "";
+      position: absolute;
+      top: 1%;
+      left: 5%;
+      width: 90%;
+      height: 90%;
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 0px, #ffffff, rgba(255, 255, 255, 0) 58%);
+      filter: blur(5px);
+      z-index: 2;
+    }
+
+    .ball:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 5%;
+      left: 10%;
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+      transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+      filter: blur(10px);
+    }
+    
     #record-container,
     #show-container {
       float: left;
@@ -160,15 +185,21 @@ $myfont: Atma;
     #record-container {
       position: relative;
       height: auto;
-      overflow: hidden;
+      // overflow: hidden;
       padding: 50px 0;
+      // background-color: yellow;
     }
 
     #record-container > div {
-      height: 386px;
-      width: 475px;
       position: fixed;
-      margin-left: 5%;
+      overflow: hidden;
+      margin: 0 auto;
+      height: 325px;
+      width: 400px;
+      position: fixed;
+      bottom: 72px;
+      margin-left: 15%;
+      // background-color: red;
     }
 
     #record-player,
@@ -180,15 +211,15 @@ $myfont: Atma;
 
     #record-player,
     #record-playhead  {
-      height: 386px;
-      width: 475px;
+      height: 325px;
+      width: 400px;
     }
   
     #record-vinyl {
-      height: 308px;
-      width: 308px;
-      left: 55px;
-      top: 40px;
+      height: 263px;
+      width: 263px;
+      left: 41px;
+      top: 30px;
     }
 
     #show-container {
@@ -203,7 +234,7 @@ $myfont: Atma;
       margin-left: -100px;
     }
     .bubble {
-      opacity: .8;
+      opacity: .3;
       
     }
   }
@@ -211,27 +242,7 @@ $myfont: Atma;
   /* ............................................ min width 1200px */
   @media only screen and (min-width: 1245px) {
     
-    #record-container > div {
-      height: 488px;
-      width: 600px;
-    }
-
-    #record-vinyl {
-      left: 65px;
-      top: 45px;
-      height: 318px;
-      width: 318px;
-    }
-
-    #record-player,
-    #record-playhead  {
-      height: 407px;
-      width: 500px;
-    }
-
-    #record-container > div {
-      margin-left: 10%;
-    }
+    
   }
 
   /* ............................................ min width 1800px */
