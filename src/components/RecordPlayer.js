@@ -7,7 +7,7 @@ import recordPlayhead from '../images/record-playhead.png'
 
 function RecordPlayer() {
     return(
-        <div>
+        <div id="record-player-container">
             <img id="record-player" src={recordPlayer} alt="record player" />
             <img id="record-vinyl"  src={recordVinyl} alt="record vinyl" />
             <img id="record-playhead" src={recordPlayhead} alt="record playhead" />

@@ -9,6 +9,8 @@ import Payments from './Payments'
 import DiscoBall from './DiscoBall'
 import Bubbles from './Bubbles'
 import RecordPlayer from './RecordPlayer'
+import Contact from './Contact'
+import AudioControls from './AudioControls'
 
 import '../Hero.scss'
 import '../Transitions.scss'
@@ -18,8 +20,9 @@ function Hero () {
     <section id="hero">
       <Bubbles />          
       <div id="record-container">
-        <DiscoBall />
+        {/* <div id="hero-backdrop"></div> */}
         <RecordPlayer />
+        <AudioControls />
       </div>
       <div id="show-container">
         <Route exact path='/' component={Summary}></Route>
@@ -27,6 +30,7 @@ function Hero () {
         <Route path='/night-to-remember' component={Event}></Route>
         <Route path='/ticket-info' component={TicketInfo}></Route>
         <Route path='/buytickets' component={Payments}></Route>
+        <Route path='/contact' component={Contact}></Route>
       </div>
     </section>
     )

@@ -6,22 +6,15 @@ $myfont: Atma;
     width: 100%;
     height: auto;
     // background-color: white;
-    // display: none;
   }
 
   #record-container {
-  // background-color: red;
-  }
-
-  #record-container > div {
-    // position: relative;
-    // overflow: hidden;
-    // margin: 0 auto;
-    // background-color: green;
+    // background-color: red;
   }
 
   #show-container {
       text-align: center;
+      padding: 16px 46px;
       // height: 650px;
       // background-color: blue;
   }
@@ -61,16 +54,10 @@ $myfont: Atma;
   /* ............................................ min width 601px */
   @media only screen and (min-width: 601px) {
 
-    #hero {
-      height: auto;
-    }
 
   }
   /* ............................................ max width 992px */
   @media only screen and (max-width: 991px) {
-  #record-container {
-    display: none;
-  }
 
   #show-container {
     width: 100%;
@@ -81,7 +68,6 @@ $myfont: Atma;
   /* ............................................ min width 992px */
   @media only screen and (min-width: 992px) {
 
-    
     #record-container,
     #show-container {
       float: left;
@@ -92,42 +78,7 @@ $myfont: Atma;
     #record-container {
       position: relative;
       height: auto;
-      // overflow: hidden;
       padding: 50px 0;
-      // background-color: yellow;
-    }
-
-    #record-container > div {
-      position: fixed;
-      overflow: hidden;
-      margin: 0 auto;
-      height: 325px;
-      width: 400px;
-      position: fixed;
-      bottom: 72px;
-      margin-left: 15%;
-      // background-color: red;
-    }
-
-    #record-player,
-    #record-playhead,
-    #record-vinyl {
-      position: absolute;
-      top: 0;
-    }
-
-    #record-player,
-    #record-playhead  {
-      height: 325px;
-      width: 400px;
-      opacity: 0.6;
-    }
-  
-    #record-vinyl {
-      height: 263px;
-      width: 263px;
-      left: 41px;
-      top: 30px;
     }
 
     #show-container {
@@ -139,7 +90,18 @@ $myfont: Atma;
 
   /* ............................................ min width 1200px */
   @media only screen and (min-width: 1245px) {
-    
+    #hero-backdrop {
+      position: fixed;
+      top: 100px;
+      left: 350px;
+      height: 380px;
+      width: 400px;
+      border-radius: 50%;
+      z-index: -10;
+      background: url('./images/dancers-with-disco-ball.png');
+      opacity: 0.75
+      // background-color: white;
+    }
     
   }
 

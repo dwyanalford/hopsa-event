@@ -52,6 +52,7 @@ class Navigation extends Component {
                         <NavLink to ="/fundraising" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Why?</NavLink>
                         <NavLink to ="/ticket-info" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Ticket Info</NavLink>
                         <NavLink to ="/buytickets" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Buy Tickets</NavLink>
+                        <NavLink to ="/contact" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Contact</NavLink>
                         <button className="icon" onClick={this.toggleClass}>
                             <i className="fas fa-bars fa-lg"></i>
                         </button>

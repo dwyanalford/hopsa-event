@@ -1,0 +1,50 @@
+// Global css styles for all screen sizes.
+
+/* this is hidden in the html so I could create my own audio
+controls using pure javascript to manipulate the DOM */
+
+#audio-controller {
+    position: absolute;
+    bottom: 25px;
+    left: -300px;
+}
+
+/* my own audio controls links */
+#player-controls {
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    left: 150px;
+    height: 100px;
+    width: 300px;
+    // background-color: green;
+}
+
+#player-controls > div {
+    margin: 35px auto;
+    width: 250px;
+    padding-left: 20px;  // tweak to center icons in div
+    // background-color: yellow;
+}
+
+#player-controls i {
+    margin-right: 50px; // spacing between audio icons
+    cursor: pointer;
+}
+
+
+/* ............................................ max width 700px */
+@media only screen and (max-width: 991px) {
+
+    #player-controls {
+        display: none;
+    }
+
+}
+
+// matches where the record player comes in from hero section
+@media only screen and (min-width: 992px) {
+    
+    
+}
+

@@ -2,17 +2,30 @@
     width: 300px;
     height: 300px;
     margin-left: 12px;
-    margin-top: -30px;
+    margin-top: -80px;
     display: inline-block;
     perspective: 1200px;
     perspective-origin: 50% 50%;
     // background-color: blue;
   }
 
+  .circle {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    margin: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 3px;
+    background-color: black;
+    filter: blur(10px);
+  }
+
   .ball {
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
     margin: 0;
     border-radius: 50%;
     position: relative;
@@ -27,6 +40,7 @@
     animation: move-disco-ball 30s infinite linear;
   }
 
+//  shadow on the sphere
   .ball:before {
     content: "";
     position: absolute;
@@ -38,14 +52,15 @@
     box-shadow: -40px 10px 70px 10px rgba(0,0,0,0.5) inset;
     z-index: 2;
   }
-
+  
+  //  shadow above the sphere
   .ball:after {
     content: "";
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 5%;
-    left: 10%;
+    top: 35px;
+    left: 25px;
     border-radius: 50%;
     background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
     transform: translateX(-80px) translateY(-90px) skewX(-20deg);
@@ -54,8 +69,6 @@
 
   .ball .shadow {
     position: absolute;
-    top: 50px;
-    left: 50px;
     width: 100%;
     height: 100%;
     background: radial-gradient(circle at 50% 50%, rgb(255, 255, 255), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
@@ -65,7 +78,6 @@
     -o-transform: rotateX(90deg) translateZ(-150px);
     transform: rotateX(90deg) translateZ(-150px);
     z-index: 1;
-    // animation: move-shadow 7s infinite linear;
   }
 
   @-moz-keyframes move-disco-ball {
@@ -104,35 +116,3 @@
     100% {
       background-position: 0 0; } }
 
-
-    @keyframes move-shadow {
-        0% {
-            left: 290px;
-            top: 100px;
-            opacity: 0;
-        }
-        5% {
-            opacity: 1;
-        }
-        45% {
-            opacity: 1;
-        }
-        50% {
-            left: -16px;
-            top: -16px;
-            opacity: 0;
-        }
-        52% {
-            left: 290px;
-            top: 100px;
-            opacity: 1;
-        }
-        95% {
-            opacity: 1;
-        }
-        100% {
-            left: -16px;
-            top: -16px;
-            opacity: 0;
-        }
-    }
