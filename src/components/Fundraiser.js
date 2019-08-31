@@ -9,7 +9,7 @@ function Fundraiser() {
     Setting precedence. We are engaging alumni from other schools to help push this as
     the First Inaugural/Annual Maintenance Fundraiser for Legacy Schools.</p>
                 <p>Every school has issues with disrepair and finding ways to raise money to fix. This
-    approach off combined fund raising takes care of that in a bigger more material way.</p>
+    approach of combined fund raising takes care of that in a bigger more material way.</p>
                 <p>We are raising money to refurbish all 9 houses at our school. Our cost is ~360,000
     GHS, just our year group alone has raised close to ~150,000 GHS and we are pleased
     to announce that work has commenced, and we would like to have all works done by

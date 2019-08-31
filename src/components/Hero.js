@@ -6,11 +6,12 @@ import Event from './Event'
 import TicketInfo from './TicketInfo'
 import Summary from './Summary'
 import Payments from './Payments'
-import DiscoBall from './DiscoBall'
+// import DiscoBall from './DiscoBall'
 import Bubbles from './Bubbles'
 import RecordPlayer from './RecordPlayer'
 import Contact from './Contact'
 import AudioControls from './AudioControls'
+import BlackWomanSilhouette from '../images/black-woman-silhouette.png'
 
 import '../Hero.scss'
 import '../Transitions.scss'
@@ -20,7 +21,8 @@ function Hero () {
     <section id="hero">
       <Bubbles />          
       <div id="record-container">
-        {/* <div id="hero-backdrop"></div> */}
+        <div id="hero-backdrop"><img src={BlackWomanSilhouette} /></div>
+        
         <RecordPlayer />
         <AudioControls />
       </div>

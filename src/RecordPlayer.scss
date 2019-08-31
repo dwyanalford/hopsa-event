@@ -26,6 +26,60 @@
       position: fixed;
     }
 
+        /* ............................................ max width 992px */
+  @media only screen and (max-width: 992px) {
+
+    #record-player {
+      z-index: 0;
+    }
+
+    #record-player,
+    #record-playhead  {
+      width: 250px;
+      height: 203px;
+      bottom: 100px;
+      left: 50px;
+    }
+  
+    #record-vinyl {
+      width: 162px;
+      height: 162px;
+      left: 76px;
+      bottom: 121px;
+    }
+  }
+
+    /* ............................................ max width 1068px */
+  @media only screen and (min-width: 993px) {
+
+    #record-player {
+      z-index: -1;
+    }
+
+    #record-player,
+    #record-playhead  {
+      width: 350px;
+      height: 284px;
+      bottom: 100px;
+      left: 100px;
+    }
+  
+    #record-vinyl {
+      width: 228px;
+      height: 228px;
+      left: 137px;
+      bottom: 128px;
+    }
+
+  }
+
+  /* ............................................ min width 1245px */
+  @media only screen and (min-width: 1245px) {
+    
+    #record-player {
+      z-index: -1;
+    }
+
     #record-player,
     #record-playhead  {
       height: 325px;
@@ -40,3 +94,5 @@
       left: 142px;
       bottom: 132px;
     }
+    
+  }
