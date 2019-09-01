@@ -26,12 +26,30 @@
       position: fixed;
     }
 
-        /* ............................................ max width 992px */
-  @media only screen and (max-width: 992px) {
-
+    /* ............................................ max width 500px */
+  @media only screen and (max-width: 700px) {
     #record-player {
       z-index: 0;
     }
+
+    #record-player,
+    #record-playhead  {
+      width: 250px;
+      height: 203px;
+      bottom: -10px;
+      left: 20px;
+    }
+  
+    #record-vinyl {
+      width: 162px;
+      height: 162px;
+      left: 46px;
+      bottom: 13px;
+    }
+  }
+
+        /* ............................................ min-width: 501px */
+  @media only screen and (min-width: 701px) {
 
     #record-player,
     #record-playhead  {
@@ -49,7 +67,7 @@
     }
   }
 
-    /* ............................................ max width 1068px */
+    /* ............................................ min-width: 993px */
   @media only screen and (min-width: 993px) {
 
     #record-player {

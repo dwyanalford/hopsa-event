@@ -56,20 +56,37 @@ $myfont: Atma;
     font-size: 20px;
     line-height: 24px; 
   }
+
+  #mobile-footer-background {
+    display: none;
+  }
   
 
-  /* ............................................ max width 600px */
-  @media only screen and (max-width: 600px) {
+  /* ............................................ MOBILE VIEW ---- max-width: 500px */
+  @media only screen and (max-width: 700px) {
+    .mobile-footer-background {
+      display: block;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 65px;
+      background-color: black;
+    }
+
+    #hero-backdrop {
+      top: 0;
+      left: 0;
+      z-index: -1;
+      height: 1270px;
+      width: auto;
+      margin-left: -180px;
+      opacity: 0.5;
+    }
 
   }
 
-  /* ............................................ min width 601px */
-  @media only screen and (min-width: 601px) {
-
-
-  }
   /* ............................................ max width 992px */
-  @media only screen and (max-width: 991px) {
+  @media only screen and (min-width: 701px) {
 
   #show-container {
     width: 100%;
@@ -77,14 +94,14 @@ $myfont: Atma;
   }
 }
 
-/* ............................................ min width 992px */
-@media only screen and (max-width: 700px) {
-  #show-container {
-    float: left;
-    width: 100%;
-    margin-top: 70px;
-  }
-}
+// /* ............................................ min width 992px */
+// @media only screen and (max-width: 700px) {
+//   #show-container {
+//     float: left;
+//     width: 100%;
+//     margin-top: 70px;
+//   }
+// }
 
 /* ............................................ min width 992px */
 @media only screen and (min-width: 701px) {

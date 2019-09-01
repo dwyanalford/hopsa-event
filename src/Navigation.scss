@@ -1,16 +1,16 @@
 // global styles across full web site regardless of media query
 nav {
     width: 100%;
-    // overflow: hidden;
     position: fixed;
     top: 0;
     z-index: 2;
     height: 70px;
     // background-color: blue;
+    // overflow: hidden;
 }
 
 .topnav {
-    margin: 0 auto;
+    // margin: 0 auto;
     // background-color: pink;
     height: 70px;
 }
@@ -22,7 +22,8 @@ nav {
     font-family: Atma;
     color: #f2f2f2;
     text-decoration: none;
-    text-align: center;
+    // text-transform: uppercase;
+    // text-align: center;
     // background-color: red;
   }
 
@@ -41,8 +42,8 @@ nav {
   animation-name: fadeIn;
   animation-duration: 1.3s;
   }
-//.............................................max-width: 600px
-@media screen and (max-width: 600px) {
+//.............................................max-width: 811px
+@media screen and (max-width: 811px) {
     .topnav a {
         padding: 14px 28px;
         font-size: 22px;
@@ -50,77 +51,96 @@ nav {
     // hide all links;
     .topnav a {display: none;}
     .topnav button.icon {  // show mobile icon
-      float: right;
+      float: left;
       display: block;
       cursor: pointer;
-      margin-right: 20px;
+      margin-left: 20px;
       margin-top: 15px;
+      background: none;
+      color: white;
     }
 
     /* The "responsive" class added to topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
     .topnav.responsive {
       position: relative; 
-      background-color: black;
+      margin-top: 50px;
+      // background-color: black;
       // opacity: 0.9;
     }
 
     .topnav.responsive button.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+      position: fixed;
+      left: 0px;
+      top: 0px;
     }
+
+    /* The animation code */
+@keyframes enter-exit-menu {
+  0%   {margin-left: -125px; opacity: 0;}
+  80% { opacity: 1;}
+  100% {margin-left: 15px;}
+}
 
     .topnav.responsive a {
       float: none;
       display: block;
       text-align: left;
       color: white;
-      border-bottom: 1px solid #333331;
+      animation-name: enter-exit-menu;
+      animation-duration: 0.3s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      background-color: black;
+      opacity: 0.75;
+    }
+
+    .topnav.responsive a:first-child {
+      display: none;
     }
   }
-  //.............................................min-width: 601px
-  @media screen and (min-width: 601px) {
+  //.............................................min-width: 812px
+  @media screen and (min-width: 812px) {
     .topnav {
-        width: 500px;
-    }
-      
-      .topnav a {
-        padding: 14px 15px;
-        font-size: 18px;
-      }
+      width: 800px;
+  }
+    
+  .topnav a {
+      padding: 20px 20px;
+      font-size: 17px;
+  }
   }
 
-  //.............................................min-width: 992px
-  @media only screen and (min-width: 992px) {
+  //.............................................min-width: 950px
+  @media only screen and (min-width: 950px) {
     .topnav {
-        width: 656px;
-    }
-      
-    .topnav a {
-        padding: 18px 25px;
-        font-size: 21px;
-    }
+      width: 920px;
+  }
+    
+  .topnav a {
+      padding: 20px 30px;
+      font-size: 17px;
+  }
   }
 
     //.............................................min-width: 1,200px
     @media only screen and (min-width: 1200px) {
         .topnav {
-            width: 966px;
+            width: 1150px;
         }
           
         .topnav a {
-            padding: 20px 45px;
-            font-size: 22px;
+            padding: 20px 40px;
+            font-size: 21px;
         }
       }
 
       //.............................................min-width: 1,500px
-    @media only screen and (min-width: 1500px) {
+    @media only screen and (min-width: 1480px) {
         .topnav {
-            width: 1300px;
+            width: 1480px;
         }
           
         .topnav a {
-            padding: 20px 65px;
+            padding: 20px 70px;
         }
       }

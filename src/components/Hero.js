@@ -22,7 +22,7 @@ function Hero () {
       <Bubbles />          
       <div id="record-container">
         <div id="hero-backdrop"><img src={BlackWomanSilhouette} /></div>
-        
+        <div className="mobile-footer-background"></div>
         <RecordPlayer />
         <AudioControls />
       </div>

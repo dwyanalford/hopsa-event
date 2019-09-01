@@ -46,17 +46,18 @@ class Navigation extends Component {
     render() {
         return(
             <nav>
-                    <div className="topnav" id="myTopnav">
-                        <NavLink exact to="/" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu}onClick={this.menuTransition}>Overview</NavLink>
-                        <NavLink to ="/night-to-remember" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>What?</NavLink>
-                        <NavLink to ="/fundraising" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Why?</NavLink>
-                        <NavLink to ="/ticket-info" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Ticket Info</NavLink>
-                        <NavLink to ="/buytickets" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Buy Tickets</NavLink>
-                        <NavLink to ="/contact" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Contact</NavLink>
-                        <button className="icon" onClick={this.toggleClass}>
-                            <i className="fas fa-bars fa-lg"></i>
-                        </button>
-                    </div>
+                <div className="topnav" id="myTopnav">
+                    <a style={{color: '#F9C43A', padding: '8px', marginTop: '14px', fontSize: '21px', marginRight: '70px'}}>HOPSA79DIVAS</a>
+                    <NavLink exact to="/" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Overview</NavLink>
+                    <NavLink to ="/night-to-remember" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>What</NavLink>
+                    <NavLink to ="/fundraising" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Why</NavLink>
+                    <NavLink to ="/ticket-info" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Tickets</NavLink>
+                    <NavLink to ="/contact" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Contact</NavLink>
+                    <NavLink to ="/buytickets" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Buy Now</NavLink>
+                    <button className="icon" onClick={this.toggleClass}>
+                        <i className="fas fa-bars fa-2x"></i>
+                    </button>
+                </div>
             </nav>
         )
     }
