@@ -50,7 +50,6 @@ controls using pure javascript to manipulate the DOM */
 @media only screen and (min-width: 701px) {
 
     #player-controls {
-        // display: none;
         left: 30px;
         bottom: 10px;
     }
@@ -58,8 +57,11 @@ controls using pure javascript to manipulate the DOM */
 }
 
 // matches where the record player comes in from hero section
-@media only screen and (min-width: 993px) {
-    
+@media only screen and (min-width: 1200px) {
+    #player-controls {
+        left: 150px;
+        bottom: 10px;
+    }
     
 }
 
