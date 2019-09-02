@@ -37,19 +37,31 @@
   }
 
   /* ............................................ MOBILE VIEW ---- max-width: 500px */
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 500px) {
     
     .bubble-wrap {
       width: 100%;
-      perspective: 300px;
-      margin-left: -170px;
+      perspective: 1000px;
+      margin-left: -180px;
       transform-style: preserve-3d;
       transform-origin: center center;
     }
   
     .bubble {
-      opacity: 0.1;
+      opacity: 0.2;
       z-index: -100;
       animation: move 16s infinite;
+    }
+
+    @for $i from 1 through 100 {
+      .bubble:nth-child(#{$i}){
+         $size: random(100)+px;
+         height: $size;
+         width: $size;
+         animation-delay: -$i * .2s;
+         transform: translate3d( (random(1000) * 1px),  (random(1000) * 1px), (random(2000) * 1px));
+         background: hsl( random(71) , 80%, 50%);
+         background:rgb(167, 131, 35);
+      }
     }
   }

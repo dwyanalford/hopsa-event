@@ -47,7 +47,7 @@ class Navigation extends Component {
         return(
             <nav>
                 <div className="topnav" id="myTopnav">
-                    <a style={{color: '#F9C43A', padding: '8px', marginTop: '14px', fontSize: '21px', marginRight: '70px'}}>HOPSA79DIVAS</a>
+                    <a style={{color: '#F9C43A', padding: '8px', marginTop: '10px', fontSize: '24px', marginRight: '70px'}}>HOPSA79DIVAS</a>
                     <NavLink exact to="/" activeStyle={{color: '#F9C43A'}} onClick={this.menuTransition} onClick={this.closeMobileMenu}>Overview</NavLink>
                     <NavLink to ="/night-to-remember" activeStyle={{color: '#F9C43A'}} onClick={this.menuTransition} onClick={this.closeMobileMenu}>What</NavLink>
                     <NavLink to ="/fundraising" activeStyle={{color: '#F9C43A'}} onClick={this.menuTransition} onClick={this.closeMobileMenu}>Why</NavLink>

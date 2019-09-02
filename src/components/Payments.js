@@ -19,7 +19,7 @@ function Payments() {
 
                     <table className="form-options">
                     <tbody>
-                    <tr><td><input type="hidden" name="on0" value="Tickets"/>** Early Bird only available with 1 ticket purchase on or before September 5, 2019</td></tr><tr><td><br /><select name="os0">
+                    <tr><td><input type="hidden" name="on0" value="Tickets"/>** Early Bird only available with 1 ticket purchase on or before September 7, 2019</td></tr><tr><td><br /><select name="os0">
 
                                     <option value="Early Bird">Early Bird $70.00 USD</option>
 

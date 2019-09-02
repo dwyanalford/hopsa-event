@@ -19,8 +19,6 @@ $myfont: Atma;
     top: 0;
     left: 0;
     z-index: -1;
-    height: 1270px;
-    width: auto;
     margin-left: -180px;
   }
 
@@ -90,16 +88,19 @@ $myfont: Atma;
       top: 0;
       left: 0;
       z-index: -1;
-      height: 1270px;
-      width: auto;
       margin-left: -180px;
-      opacity: 0.5;
+      opacity: 0.7;
+    }
+
+    #hero-backdrop img {
+      height: 300px;
     }
 
     #show-container {
       width: 100%;
       padding: 16px 15px;
       margin-top: 50px;
+      height: auto;
     }
 
     #show-container h1 {
