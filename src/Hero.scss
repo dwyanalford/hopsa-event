@@ -57,7 +57,8 @@ $myfont: Atma;
     line-height: 24px; 
   }
 
-  #mobile-footer-background {
+  .mobile-footer-background,
+  .mobile-header-text {
     display: none;
   }
   
@@ -73,6 +74,18 @@ $myfont: Atma;
       background-color: black;
     }
 
+    #record-container h1 {
+      font-family: $myfont;
+      font-size: 22px;
+    }
+
+    .mobile-header-text {
+      display: block;
+      position: absolute;
+      top: 4px;
+      left: 70px;
+    }
+
     #hero-backdrop {
       top: 0;
       left: 0;
@@ -81,6 +94,33 @@ $myfont: Atma;
       width: auto;
       margin-left: -180px;
       opacity: 0.5;
+    }
+
+    #show-container {
+      width: 100%;
+      padding: 16px 15px;
+      margin-top: 50px;
+    }
+
+    #show-container h1 {
+      font-size: 24px;
+    }
+  
+    #show-container h2 {
+      font-size: 23px;
+    }
+  
+    #show-container h3 {
+      font-size: 22px;
+    }
+  
+    #show-container h4 {
+      font-size: 20px;
+    }
+  
+    #show-container p {
+      font-size: 18px;
+      line-height: 23px; 
     }
 
   }

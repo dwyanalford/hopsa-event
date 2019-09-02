@@ -21,8 +21,9 @@ function Hero () {
     <section id="hero">
       <Bubbles />          
       <div id="record-container">
-        <div id="hero-backdrop"><img src={BlackWomanSilhouette} /></div>
+        <div id="hero-backdrop"><img src={BlackWomanSilhouette} alt="soul sista silhouette" /></div>
         <div className="mobile-footer-background"></div>
+        <div className="mobile-header-text"><h1 className="highlight-color">HOPSA79DIVAS</h1></div>
         <RecordPlayer />
         <AudioControls />
       </div>

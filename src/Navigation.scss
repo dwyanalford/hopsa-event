@@ -46,7 +46,7 @@ nav {
 @media screen and (max-width: 811px) {
     .topnav a {
         padding: 14px 28px;
-        font-size: 22px;
+        font-size: 18px;
       }
     // hide all links;
     .topnav a {display: none;}
@@ -75,10 +75,10 @@ nav {
     }
 
     /* The animation code */
-@keyframes enter-exit-menu {
+@keyframes enter-menu {
   0%   {margin-left: -125px; opacity: 0;}
   80% { opacity: 1;}
-  100% {margin-left: 15px;}
+  100% {margin-left: 10px;}
 }
 
     .topnav.responsive a {
@@ -86,17 +86,21 @@ nav {
       display: block;
       text-align: left;
       color: white;
-      animation-name: enter-exit-menu;
+      animation-name: enter-menu;
       animation-duration: 0.3s;
       animation-iteration-count: 1;
       animation-timing-function: ease-in;
       background-color: black;
-      opacity: 0.75;
+      opacity: 0.95;
+      width: 135px;
+      border-bottom: 1px solid #272727;
+      border-right: 1px solid #272727;
     }
 
     .topnav.responsive a:first-child {
       display: none;
     }
+
   }
   //.............................................min-width: 812px
   @media screen and (min-width: 812px) {

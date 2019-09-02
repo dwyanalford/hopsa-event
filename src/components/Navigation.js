@@ -14,7 +14,7 @@ class Navigation extends Component {
     }
 
     toggleClass() {
-        const x = document.getElementById("myTopnav");
+        const x = document.getElementById("myTopnav")
         if (x.className === "topnav") {
             x.className += " responsive";
         } else {
@@ -23,9 +23,9 @@ class Navigation extends Component {
     }
 
     closeMobileMenu() {
-        const x = document.getElementById("myTopnav");
+        const x = document.getElementById("myTopnav")
         if (x.className === "topnav responsive") {
-            x.classList.remove('responsive');
+            x.classList.remove('responsive')
         } else {
             x.className = "topnav responsive";
         }
@@ -48,14 +48,14 @@ class Navigation extends Component {
             <nav>
                 <div className="topnav" id="myTopnav">
                     <a style={{color: '#F9C43A', padding: '8px', marginTop: '14px', fontSize: '21px', marginRight: '70px'}}>HOPSA79DIVAS</a>
-                    <NavLink exact to="/" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Overview</NavLink>
-                    <NavLink to ="/night-to-remember" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>What</NavLink>
-                    <NavLink to ="/fundraising" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Why</NavLink>
-                    <NavLink to ="/ticket-info" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Tickets</NavLink>
-                    <NavLink to ="/contact" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Contact</NavLink>
-                    <NavLink to ="/buytickets" activeStyle={{color: '#F9C43A'}} onClick={this.closeMobileMenu} onClick={this.menuTransition}>Buy Now</NavLink>
+                    <NavLink exact to="/" activeStyle={{color: '#F9C43A'}} onClick={this.menuTransition} onClick={this.closeMobileMenu}>Overview</NavLink>
+                    <NavLink to ="/night-to-remember" activeStyle={{color: '#F9C43A'}} onClick={this.menuTransition} onClick={this.closeMobileMenu}>What</NavLink>
+                    <NavLink to ="/fundraising" activeStyle={{color: '#F9C43A'}} onClick={this.menuTransition} onClick={this.closeMobileMenu}>Why</NavLink>
+                    <NavLink to ="/ticket-info" activeStyle={{color: '#F9C43A'}} onClick={this.menuTransition} onClick={this.closeMobileMenu}>Tickets</NavLink>
+                    <NavLink to ="/contact" activeStyle={{color: '#F9C43A'}} onClick={this.menuTransition} onClick={this.closeMobileMenu}>Contact</NavLink>
+                    <NavLink to ="/buytickets" activeStyle={{color: '#F9C43A'}} onClick={this.menuTransition} onClick={this.closeMobileMenu}>Buy Now</NavLink>
                     <button className="icon" onClick={this.toggleClass}>
-                        <i className="fas fa-bars fa-2x"></i>
+                        <i className="fas fa-bars fa-lg"></i>
                     </button>
                 </div>
             </nav>
