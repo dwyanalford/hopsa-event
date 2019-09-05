@@ -7,11 +7,11 @@ function Payments() {
             <div id="payment-container">
                 <h2 className="highlight-color">Buy Tickets Online</h2>
                 <div id="credit-card-icons">
-                    <i className="fab fa-cc-paypal fa-3x"></i>
-                    <i className="fab fa-cc-visa fa-3x"></i>
-                    <i className="fab fa-cc-mastercard fa-3x"></i>
-                    <i className="fab fa-cc-discover fa-3x"></i>
-                    <i className="fab fa-cc-amex fa-3x"></i>
+                    <i className="fab fa-cc-paypal fa-2x"></i>
+                    <i className="fab fa-cc-visa fa-2x"></i>
+                    <i className="fab fa-cc-mastercard fa-2x"></i>
+                    <i className="fab fa-cc-discover fa-2x"></i>
+                    <i className="fab fa-cc-amex fa-2x"></i>
                 </div>
                 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
 
